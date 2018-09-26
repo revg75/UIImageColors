@@ -7,6 +7,21 @@
 
 import UIKit
 
+
+@objc class UIImageColors : NSObject {
+    public var background: UIColor!
+    public var primary: UIColor!
+    public var secondary: UIColor!
+    public var detail: UIColor!
+    
+    public init(background: UIColor, primary: UIColor, secondary: UIColor, detail: UIColor) {
+        self.background = background
+        self.primary = primary
+        self.secondary = secondary
+        self.detail = detail
+    }
+}
+
 public struct UIImageColors {
     public var background: UIColor!
     public var primary: UIColor!
